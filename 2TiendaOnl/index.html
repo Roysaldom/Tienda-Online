@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./imagenes/shortcut_icon.png" type="image/x-icon" />
+    <title>Pera Store</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/data.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="wrapper">
+            <figure class="logo">
+                <img src="./imagenes/shortcut_icon.png" alt="logo img" />
+            </figure>
+
+            <div class="inputs">
+                <label>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search-bar" type="text" />
+                </label>
+                <label>
+                    Buscar por marca
+                    <select name="brand" id="brand">
+                        <option value="all"></option>
+                        <option value="Pro">Pera Pro</option>
+                        <option value="Pera">Pera</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <button class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="toggle-menu"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <div class="cart-container hidden">
+            <div class="title-container">
+                <h3 class="cart-title">Carrito de compra</h3>
+                <button class="close-cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="cart-items"></div>
+            <p class="cart-total">Total: €0</p>
+            <button class="empty-btn">Vaciar carrito</button>
+            <button class="buy-btn">Proceder a la compra</button>
+        </div>
+
+        <div class="alert hidden">
+            <div class="icon-container">
+                <h3 class="alert-icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </h3>
+                <button class="close-alert"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <h3 class="alert-title"></h3>
+            <p class="alert-message"></p>
+        </div>
+
+        <section class="products-container">
+            <div class="product-card">
+                <figure class="product-img">
+                    <img src="./imagenes/pearpro.jpg" alt="perapro" />
+                </figure>
+                <h3 class="product-title"></h3>
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+                <button class="add-to-cart-button"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p>©2025 Pera Store - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
